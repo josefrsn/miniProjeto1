@@ -1,0 +1,121 @@
+﻿Primeiro Mini-Projeto: Parsing de Json.
+
+
+Esse Projeto tem como intuito treinar o processo de desserialização, algo muito comum em programação. Nesse mini-projeto, vocês irão treinar:
+
+
+* Tipos de dados
+* Estruturas de dados
+* Estruturas de Repetição
+* Estruturas Condicionais
+* Lógica de Programação
+* Funções
+* Leitura e escrita de arquivos.
+
+
+Será necessário armazenar todos os dados num arquivo .txt, da seguinte forma:
+
+
+Título do Objetivo
+Conteúdo
+============================================
+Título do Objetivo
+        Conteúdo
+============================================
+etc.
+
+
+O mini-projeto tem como objetivo revisar e treinar os conteúdos vistos até então, que são muito importantes. Façam isso por vocês.
+
+
+Todos esses dados estão num arquivo .JSON, chamado movies_and_series.json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dados necessários para o arquivo txt:
+
+
+
+
+Filmes e Séries
+1. Listar todos os títulos de filmes:
+   * Extraia todos os nomes de filmes disponíveis no JSON.
+2. Listar todas as séries:
+   * Obtenha os títulos de todas as séries presentes no JSON.
+3. Recuperar o filme/série com maior nota (rating):
+   * Identifique qual filme ou série possui o maior valor de rating.
+4. Listar os gêneros de todos os filmes e séries:
+   * Extraia e combine todos os gêneros (genres) sem duplicações.
+5. Obter o número total de filmes e séries:
+   * Conte quantos filmes e quantas séries existem no JSON.
+________________
+
+
+Plataformas de Streaming
+6. Listar todas as plataformas de streaming disponíveis:
+   * Extraia o nome das plataformas (Netflix, Amazon Prime, HBO Max, etc.).
+7. Filtrar os filmes/séries disponíveis em 4K no Netflix:
+   * Liste apenas aqueles com a resolução 4K no Netflix.
+8. Identificar plataformas onde um filme específico está disponível:
+   * Para um filme como "The Shawshank Redemption", liste as plataformas disponíveis e os URLs correspondentes.
+________________
+
+
+Elenco e Produção
+9. Listar todos os atores e os personagens que interpretam:
+   * Extraia o nome de todos os atores e seus respectivos personagens.
+10. Obter o ator com maior salário em um filme ou série:
+   * Encontre o ator que recebeu o maior valor em salary.
+11. Listar todas as localizações de filmagem dos filmes:
+   * Extraia todos os locais em filmingLocations presentes no JSON.
+12. Listar os diretores de cada filme:
+   * Relacione cada filme com o(s) diretor(es).
+________________
+
+
+Bilheteria e Produção
+13. Obter o filme com maior receita na bilheteria (revenue):
+   * Encontre o filme com o maior valor em revenue dentro de boxOffice.
+14. Calcular o lucro médio dos filmes:
+   * Some os valores de profit e calcule a média para todos os filmes.
+15. Obter a distribuição de vendas de ingressos por região:
+   * Liste os valores de ticketSales.domestic e ticketSales.international para cada filme.
+________________
+
+
+Prêmios
+16. Listar todos os prêmios e categorias de cada filme/série:
+   * Extraia o nome dos prêmios, o ano e as categorias associadas.
+17. Identificar filmes/séries que ganharam prêmios:
+   * Liste todos os filmes e séries onde won é true.
+18. Listar os indicados ao prêmio de 'Melhor Filme' de cada ano:
+   * Encontre os filmes indicados para a categoria de 'Best Picture' e organize-os por ano.
+________________
+
+
+Avaliações (Reviews)
+19. Obter o comentário com maior número de votos úteis (helpfulVotes):
+   * Encontre o comentário com o maior valor em helpfulVotes.
+20. Calcular a nota média dos filmes:
+   * Calcule a média das notas (rating) de todos os filmes.
+21. Filtrar todas as avaliações feitas antes de 2022:
+   * Liste apenas as avaliações onde a data (date) é anterior a 2022.

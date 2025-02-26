@@ -1,0 +1,170 @@
+{
+    "data": {
+      "movies": [
+        {
+          "id": "tt0111161",
+          "title": "The Shawshank Redemption",
+          "releaseYear": 1994,
+          "genres": ["Drama", "Crime"],
+          "duration": 142,
+          "rating": 9.3,
+          "languages": ["English"],
+          "directors": ["Frank Darabont"],
+          "writers": ["Stephen King", "Frank Darabont"],
+          "production": {
+            "studio": "Castle Rock Entertainment",
+            "country": "USA",
+            "filmingLocations": [
+              "Mansfield, Ohio",
+              "Ashland, Ohio"
+            ],
+            "boxOffice": {
+              "budget": 25000000,
+              "revenue": 28341469,
+              "profit": 3341469,
+              "ticketSales": {
+                "domestic": 15000000,
+                "international": 13341469
+              }
+            }
+          },
+          "cast": [
+            {
+              "actor": "Tim Robbins",
+              "character": "Andy Dufresne",
+              "salary": 1000000,
+              "previousMovies": [
+                { "title": "Bull Durham", "year": 1988 }
+              ],
+              "biography": {
+                "birthDate": "1958-10-16",
+                "nationality": "American",
+                "awards": [
+                  { "year": 2003, "award": "Academy Award", "category": "Best Supporting Actor", "won": true }
+                ]
+              }
+            },
+            {
+              "actor": "Morgan Freeman",
+              "character": "Ellis Boyd 'Red' Redding",
+              "salary": 5000000,
+              "previousMovies": [
+                { "title": "Driving Miss Daisy", "year": 1989 }
+              ],
+              "biography": {
+                "birthDate": "1937-06-01",
+                "nationality": "American",
+                "awards": [
+                  { "year": 2005, "award": "Academy Award", "category": "Best Supporting Actor", "won": true }
+                ]
+              }
+            }
+          ],
+          "streaming": {
+            "Netflix": {
+              "available": true,
+              "url": "https://www.netflix.com/title/70005379",
+              "resolution": ["SD", "HD", "4K"]
+            },
+            "Amazon Prime": {
+              "available": false,
+              "url": ""
+            }
+          },
+          "reviews": [
+            {
+              "user": "JohnDoe123",
+              "rating": 10,
+              "comment": "An absolute masterpiece of storytelling.",
+              "details": {
+                "helpfulVotes": 120,
+                "date": "2022-05-14"
+              }
+            }
+          ],
+          "awards": [
+            {
+              "year": 1995,
+              "award": "Academy Awards",
+              "category": "Best Picture",
+              "won": false,
+              "nominees": ["Forrest Gump", "Pulp Fiction", "Four Weddings and a Funeral", "Quiz Show"]
+            }
+          ]
+        }
+      ],
+      "series": [
+        {
+          "id": "tt0903747",
+          "title": "Breaking Bad",
+          "releaseYear": 2008,
+          "genres": ["Crime", "Drama", "Thriller"],
+          "seasons": 5,
+          "episodes": 62,
+          "rating": 9.5,
+          "languages": ["English"],
+          "creators": ["Vince Gilligan"],
+          "cast": [
+            {
+              "actor": "Bryan Cranston",
+              "character": "Walter White",
+              "salary": 225000,
+              "previousShows": [
+                { "title": "Malcolm in the Middle", "year": 2000 }
+              ],
+              "biography": {
+                "birthDate": "1956-03-07",
+                "nationality": "American",
+                "awards": [
+                  { "year": 2014, "award": "Primetime Emmy", "category": "Outstanding Lead Actor in a Drama Series", "won": true }
+                ]
+              }
+            },
+            {
+              "actor": "Aaron Paul",
+              "character": "Jesse Pinkman",
+              "salary": 150000,
+              "previousShows": [
+                { "title": "Big Love", "year": 2006 }
+              ],
+              "biography": {
+                "birthDate": "1979-08-27",
+                "nationality": "American",
+                "awards": [
+                  { "year": 2014, "award": "Primetime Emmy", "category": "Outstanding Supporting Actor in a Drama Series", "won": true }
+                ]
+              }
+            }
+          ],
+          "streaming": {
+            "Netflix": {
+              "available": true,
+              "url": "https://www.netflix.com/title/70143836",
+              "resolution": ["HD", "4K"]
+            }
+          },
+          "reviews": [
+            {
+              "user": "SkylerNotGuilty",
+              "rating": 10,
+              "comment": "The best TV show ever made!",
+              "details": {
+                "helpfulVotes": 500,
+                "date": "2021-08-10"
+              }
+            }
+          ],
+          "awards": [
+            {
+              "year": 2013,
+              "award": "Primetime Emmy Awards",
+              "category": "Outstanding Drama Series",
+              "won": true,
+              "nominees": ["Game of Thrones", "Mad Men", "House of Cards"]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
