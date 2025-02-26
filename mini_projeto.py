@@ -229,19 +229,113 @@ escrever('============================================\n')
 #Décima sexta questão
 premios_filme = {}
 premios_serie = {}
-
-def premios(n: dict,d: dict) -> dict:
-    awards = n.get('awards', '')
-    for i in range(len(awards)):
-        d['Ano'] = awards[i].get('year', '')
-        d['Prêmio'] = awards[i].get('award', '') 
-        d['Categoria'] = awards[i].get('category', '')
+awards_filme = filme.get('awards', '')
+awards_serie = serie.get('awards', '')
+def premios(n: list, d: dict) -> dict:
+    for i in range(len(n)):
+        d['Ano'] = n[i].get('year', '')
+        d['Prêmio'] = n[i].get('award', '') 
+        d['Categoria'] = n[i].get('category', '')
     return d
 
-premios(filme, premios_filme)
-premios(serie, premios_serie)
+premios(awards_filme, premios_filme)
+premios(awards_serie, premios_serie)
 
-escrever(f'{premios_filme}, {premios_serie}')
+escrever('16. Listar todos os prêmios e categorias de cada filme/série:\n')
+escrever(f'filmes: {premios_filme}, series: {premios_serie}\n')
+escrever('============================================\n')
 
+#Decima sétima questão
 
+premiacao_filme = awards_filme[0].get('won', '')
+if premiacao_filme == True:
+    premiacao_filme = 'não ganhou premios'
+else: 
+    premiacao_filme = 'ganhou premios'
+premiacao_serie = awards_serie[0].get('won', '')
+if premiacao_serie == True:
+    premiacao_serie = 'não ganhou premios'
+else:
+    premiacao_serie = 'ganhou premios'
+
+escrever('17. Identificar filmes/séries que ganharam prêmios:\n')
+escrever(f'{titulo_filme} {premiacao_filme}, {titulo_serie} {premiacao_serie}\n')
+escrever('============================================\n')
+
+#Decima oitava questão
+categoria_filme = premios_filme.get('Categoria', '')
+categoria_serie = premios_serie.get('Categoria', '')
+
+escrever('18. Listar os indicados ao prêmio de "Melhor Filme" de cada ano:\n')
+if categoria_filme == 'Best Picture':
+    escrever(f'{titulo_filme} foi indicado a melhor filme\n')
+else:
+    escrever(f'{titulo_filme} não foi indicado a melhor filme\n')
+
+if categoria_serie == 'Best Picture':
+    escrever(f'{titulo_serie} foi indicado a melhor filme\n')
+else:
+    escrever(f'{titulo_serie} não foi indicado a melhor filme\n')
+escrever('============================================\n')
+
+#Décima nona questão
+helpfulVotes_serie = {}
+helpfulVotes_filme = {}
+
+review_filme = filme.get('reviews', '')
+for i in range(0, len(review_filme)):
+    detalhes_filme = review_filme[i].get('details', '')
+    helpfulVotes_filme['Comentário'] = review_filme[i].get('comment', '')
+    helpfulVotes_filme['Total de votos'] = detalhes_filme.get('helpfulVotes', '')
+
+review_serie = serie.get('reviews', '')
+for i in range(0, len(review_serie)):
+    detalhes_serie = review_serie[i].get('details', '')
+    helpfulVotes_serie['Comentário'] = review_serie[i].get('comment', '')
+    helpfulVotes_serie['Total de votos'] = detalhes_serie.get('helpfulVotes', '')
+
+escrever('19. Obter o comentário com maior número de votos úteis (helpfulVotes):\n')
+escrever(f'filmes: {helpfulVotes_filme}, series: {helpfulVotes_serie}\n')
+escrever('============================================\n')
+
+#Vigésima questão
+nota_dos_filmes = filme.get('rating', '')
+media_dos_filmes = nota_dos_filmes / len(filme_t)
+
+escrever('20. Calcular a nota média dos filmes:\n')
+escrever(f'A média das notas dos filmes {media_dos_filmes}\n')
+escrever('============================================\n')
+
+#Vigésima primeira questão
+filtro_data_serie = {}
+filtro_data_filme = {}
+
+escrever('21. Filtrar todas as avaliações feitas antes de 2022:\n')
+
+review_filme = filme.get('reviews', '')
+for i in range(0, len(review_filme)):
+    detalhes_filme = review_filme[i].get('details', '')
+    filtro_data_filme['Comentário'] = review_filme[i].get('comment', '')
+    filtro_data_filme['Total de votos'] = detalhes_filme.get('date', '')
+
+data_filme = detalhes_filme.get('date', '')
+data_filme = data_filme.split('-')
+
+if int(data_filme[0]) < 2022:
+    escrever(f'{filtro_data_filme}\n')
+review_serie = serie.get('reviews', '')
+
+for i in range(0, len(review_serie)):
+    detalhes_serie = review_serie[i].get('details', '')
+    filtro_data_serie['Comentário'] = review_serie[i].get('comment', '')
+    filtro_data_serie['data'] = detalhes_serie.get('date', '')
+
+data_serie = detalhes_serie.get('date', '')
+data_serie = data_serie.split('-')
+
+if int(data_serie[0]) < 2022:
+    escrever(f'{filtro_data_serie}\n')
+review_serie = serie.get('reviews', '')
+
+escrever('============================================\n')
 
