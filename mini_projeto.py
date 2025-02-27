@@ -231,6 +231,7 @@ premios_filme = {}
 premios_serie = {}
 awards_filme = filme.get('awards', '')
 awards_serie = serie.get('awards', '')
+
 def premios(n: list, d: dict) -> dict:
     for i in range(len(n)):
         d['Ano'] = n[i].get('year', '')
@@ -242,7 +243,7 @@ premios(awards_filme, premios_filme)
 premios(awards_serie, premios_serie)
 
 escrever('16. Listar todos os prêmios e categorias de cada filme/série:\n')
-escrever(f'filmes: {premios_filme}, series: {premios_serie}\n')
+escrever(f'filmes: {premios_filme}\nseries: {premios_serie}\n')
 escrever('============================================\n')
 
 #Decima sétima questão
@@ -295,7 +296,7 @@ for i in range(0, len(review_serie)):
     helpfulVotes_serie['Total de votos'] = detalhes_serie.get('helpfulVotes', '')
 
 escrever('19. Obter o comentário com maior número de votos úteis (helpfulVotes):\n')
-escrever(f'filmes: {helpfulVotes_filme}, series: {helpfulVotes_serie}\n')
+escrever(f'filmes: {helpfulVotes_filme}\nseries: {helpfulVotes_serie}\n')
 escrever('============================================\n')
 
 #Vigésima questão
